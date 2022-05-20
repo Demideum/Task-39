@@ -15,32 +15,32 @@ namespace Task_39
     class Player
     {
         private int _id;
-        public string Name;
-        public int Age;
-        public string Race;
-        public string WarriorClass;
+        private string _name;
+        private int _age;
+        private string _race;
+        private string _warriorClass;
 
         public Player(int id, string name, int age, string race, string warriorClass)
         {
             _id = id;
-            Name = name;
-            Age = age;
-            Race = race;
-            WarriorClass = warriorClass;
+            _name = name;
+            _age = age;
+            _race = race;
+            _warriorClass = warriorClass;
         }
 
         public Player()
         {
             _id = 00000000;
-            Name = "Боб";
-            Age = 18;
-            Race = "Человек";
-            WarriorClass = "Воин";
+            _name = "Боб";
+            _age = 18;
+            _race = "Человек";
+            _warriorClass = "Воин";
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"\nID - {_id} \nИмя - {Name} \nВозраст - {Age} \nРаса - {Race} \nКласс воина - {WarriorClass}");
+            Console.WriteLine($"\nID - {_id} \nИмя - {_name} \nВозраст - {_age} \nРаса - {_race} \nКласс воина - {_warriorClass}");
         }
     }
 }
